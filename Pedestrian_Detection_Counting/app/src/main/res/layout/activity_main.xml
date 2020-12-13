@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#00FFFFFF"
     tools:context=".MainActivity">
 
     <!--<com.google.android.material.appbar.AppBarLayout
@@ -20,80 +22,98 @@
     </com.google.android.material.appbar.AppBarLayout>-->
 
     <include layout="@layout/content_main" />
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_gravity="bottom"
-    android:layout_marginBottom="30dp"
-    android:orientation="vertical">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/frame"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Frame"
-            android:textColor="@android:color/black" />
-
-        <TextView
-            android:id="@+id/frame_info"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:gravity="right"
-            android:text="640*480"
-            android:textColor="@android:color/black" />
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/crop"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Crop"
-            android:textColor="@android:color/black" />
-
-        <TextView
-            android:id="@+id/crop_info"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:gravity="right"
-            android:text="640*480"
-            android:textColor="@android:color/black" />
-    </LinearLayout>
+            android:orientation="horizontal">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            <TextView
+                android:id="@+id/frame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Frame"
+                android:textColor="@android:color/black" />
 
-        <TextView
-            android:id="@+id/inference"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Inference Time"
-            android:textColor="@android:color/black" />
+            <TextView
+                android:id="@+id/frame_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:text="640*480"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
 
-        <TextView
-            android:id="@+id/inference_info"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:gravity="right"
-            android:text="640*480"
-            android:textColor="@android:color/black" />
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/crop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Crop"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/crop_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:text="640*480"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/inference"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Inference Time"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/inference_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:text="640*480"
+                android:textColor="@android:color/black" />
+
+
+        </LinearLayout>
     </LinearLayout>
-</LinearLayout>
+
+    <ImageButton
+        android:id="@+id/toExit"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/transparent"
+        android:tint="#F44336"
+        app:srcCompat="@android:drawable/ic_lock_power_off" />
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

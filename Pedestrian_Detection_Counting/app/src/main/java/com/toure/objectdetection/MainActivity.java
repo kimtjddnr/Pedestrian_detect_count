@@ -22,8 +22,17 @@ import android.util.Size;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.Surface;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.app.Activity;
+
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -65,6 +74,16 @@ public abstract class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         /*Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);*/
+
+        ImageButton exitbtn = (ImageButton) findViewById(R.id.toExit);
+        exitbtn.setOnClickListener(new OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                finish();
+                System.exit(0);
+            }
+        });
 
         //getSupportActionBar().setDisplayShowTitleEnabled(false);
 

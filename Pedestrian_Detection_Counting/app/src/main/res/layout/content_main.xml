@@ -8,10 +8,11 @@
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <FrameLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="50dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
